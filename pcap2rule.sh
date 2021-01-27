@@ -79,6 +79,7 @@ fi
 
 #Begin Bro2Model -> model/proto
 if [ -f Bro2Model.java ]; then
+    sudo apt install openjdk-11-jdk-headless
     javac Bro2Model.java && echo Compiled Bro2Model || echo Failure to compile Bro2Model exit
     java Bro2Model radio_http_msgs.log && echo -e ${RED}Finished Bro2Model...${NC} || echo Failed Bro2Model exit
     echo
