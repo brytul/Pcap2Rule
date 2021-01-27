@@ -13,6 +13,8 @@ This converts .pcapng files into usable snort rules.
 
 This currently only supports http as there is only an http .zeek profile
 
+Simply run the sh script with the 3 required args:
+
 ```sh
 ./pcap2rule.sh <.pcapng> <.zeek profile> <Name of Snort rules>
 ```
